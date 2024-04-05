@@ -4,13 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
+    "test": "jest --watchAll",
     "test:staged": "jest",
     "prepare": "husky"
   },
   "lint-staged": {
     "*.js": [
-      "npx standard"
+      "npx standard",
+      "git add",
+      "npm run test:staged"
     ]
   },
   "standard": {
