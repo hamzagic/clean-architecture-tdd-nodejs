@@ -1,3 +1,3 @@
 To run lint-staged: npx lint-staged (only works for files already added to git stage area through git add).
 
-Jest: run jest init to setup tests.
+Jest: run npx jest init to setup tests.
