@@ -18,6 +18,7 @@ class ExpressRouterAdapter {
   }
 }
 
+// Presentation layer
 // file signup-router
 class SignupRouter {
   async route (httpRequest) {
@@ -30,6 +31,7 @@ class SignupRouter {
   }
 }
 
+// Domain layer
 // file signup-usecase
 class SignupUseCase {
   async signup (email, password, repeatPassword) {
@@ -39,6 +41,7 @@ class SignupUseCase {
   }
 }
 
+// Infra layer
 // file add-account-repository
 const mongoose = require('mongoose')
 const AccountModel = mongoose.model('Account')
